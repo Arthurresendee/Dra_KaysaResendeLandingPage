@@ -1,0 +1,65 @@
+/* Estilos gerais da seção */
+.topicos {
+   background-color: #f4efe9;
+   padding: 40px 15px;
+   color: #232224;
+ }
+ 
+ .TituloTopico {
+   text-align: center;
+   font-size: 40px;
+   font-family: "Nanum Gothic", sans-serif;
+   color: #102947;
+   margin-bottom: 30px;
+ }
+ .container {
+   width: 100%;
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 0 15px 2rem;
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+ }
+
+ .containerCards {
+   display: flex;
+   gap: 20px;
+   justify-content: center;
+   flex-wrap: wrap;
+   margin-bottom: 20px;
+ }
+ 
+ .card {
+   background-color: #ffffff;
+   border-radius: 8px;
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+   padding: 20px;
+   max-width: 300px;
+   text-align: center;
+   transition: transform 0.3s ease;
+ }
+ 
+ .card:hover {
+   transform: translateY(-10px);
+   cursor: default;
+ }
+ 
+ .card h3 {
+   font-size: 22px;
+   color: #102947;
+   margin-bottom: 10px;
+ }
+ 
+ .card p {
+   font-size: 16px;
+   line-height: 1.5;
+ }
+ 
+ @media (max-width: 768px) {
+   .containerCards {
+     flex-direction: column;
+     align-items: center;
+   }
+ }
+ 

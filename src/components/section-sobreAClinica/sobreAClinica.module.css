@@ -1,0 +1,56 @@
+.sobre_a_clinica {
+   border-top: 5px solid white;
+   position: relative;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   /* Alterar para coluna em telas menores */
+   align-items: center;
+   padding: 20px;
+   box-sizing: border-box;
+   background-color: #d2bfb8;
+ }
+ 
+ .sobre_a_clinica_texto {
+   max-width: 800px;
+   text-align: center;
+   flex: 1;
+   margin: 25px 0px 45px 0px;
+   /* Adiciona espaço entre texto e vídeo em telas menores */
+   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+ }
+ .sobre_a_clinica_texto .p1 {
+   font-size: 58px;
+   font-family: "Merriweather", serif;
+   font-weight: 700;
+   font-style: normal;
+   letter-spacing: -0.06em;
+   color: #102947;
+ }
+ .sobre_a_clinica_texto .p2 {
+   font-size: 30px;
+   margin-bottom: 15px;
+   font-family: "Jost", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+   letter-spacing: 0.09em;
+   color: #102947;
+ }
+ 
+ .area_video {
+   flex: 1;
+   display: flex;
+   justify-content: center;
+   width: 100%;
+   /* Garante que o vídeo ocupe toda a largura disponível */
+ }
+ 
+ .area_video iframe {
+   width: 100%;
+   max-width: 850px;
+   /* Define o tamanho máximo do iframe */
+   height: 500px;
+   border-radius: 10px;
+   box-shadow: 0px 10px 30px 5px rgba(0, 0, 0, 0.5);
+   margin-bottom: 40px;
+ }

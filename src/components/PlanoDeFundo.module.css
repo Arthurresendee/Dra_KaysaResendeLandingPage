@@ -1,0 +1,11 @@
+.section_home {
+   width: 100%;
+   overflow: hidden;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+   align-items: center;
+   background-size: cover;
+   background-position: center center;
+ }
+ 
