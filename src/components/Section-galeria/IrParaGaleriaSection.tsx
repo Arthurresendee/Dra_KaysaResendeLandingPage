@@ -1,4 +1,4 @@
-import styles from './IrParaGaleriaSection.module.css'
+// import styles from './IrParaGaleriaSection.module.css'
 
 
 export function IrParaGaleriaSection() {
