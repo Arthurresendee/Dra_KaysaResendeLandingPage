@@ -1,19 +1,19 @@
 .imagemContainer {
-    width: 90%; /* O contêiner ocupa toda a largura disponível */
-    height: 100%; /* O contêiner ocupa toda a altura disponível */
+    width: 90%;
+    height: 100%;
     display: flex;
-    justify-content: center; /* Centraliza horizontalmente a imagem */
-    align-items: center; /* Centraliza verticalmente a imagem */
-    overflow: hidden; /* Garante que a imagem não ultrapasse os limites */
-    border-radius: 8px; /* Dá um leve arredondamento aos cantos */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra sutil */
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 
 }
 
 .imagem {
-    max-width: 90%; /* Garante que a imagem não ocupe mais que 90% do contêiner */
-    max-height: 90%; /* Garante que a altura não ultrapasse 90% do contêiner */
-    object-fit: contain; /* Ajusta a imagem para caber dentro do contêiner sem cortes */
-    border-radius: 4px; /* Adiciona um leve arredondamento à imagem */
-    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1); /* Dá uma sombra suave para destaque */
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+    border-radius: 4px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
 }
