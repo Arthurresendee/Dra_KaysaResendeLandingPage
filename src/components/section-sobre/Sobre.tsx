@@ -31,7 +31,7 @@ console.log(conteudoFinal)
 
 export function Sobre() {
    return (
-      <PlanoDeFundo imagemDeFundo={ImgFundo} min_height='80vh'>
+      <PlanoDeFundo imagemDeFundoURL={ImgFundo} min_height='80vh'>
          <Conteudo conteudoCompleto={conteudoFinal.conteudoCompleto} />
       </PlanoDeFundo>
    );

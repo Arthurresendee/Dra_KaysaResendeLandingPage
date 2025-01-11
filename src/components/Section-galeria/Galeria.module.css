@@ -1,0 +1,20 @@
+.galeriaContainer {
+    display: flex;
+    justify-content: space-between;
+ }
+ 
+ .sectionEsquerda {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ 
+ .sectionDireita {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e0e0e0;
+ }
+ 

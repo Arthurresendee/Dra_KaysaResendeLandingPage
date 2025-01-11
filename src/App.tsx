@@ -6,6 +6,7 @@ import {
   Topico,
   TopicoSection,
 } from "./components/section-cards/TopicoSection";
+import { Galeria } from "./components/Section-galeria/Galeria.tsx";
 import { Sobre } from "./components/section-sobre/Sobre";
 import {
   SobreAClinica,
@@ -71,6 +72,7 @@ export function App() {
     <div>
       <LinksSociais />
       <Home />
+      <Galeria />
       <TopicoSection topicos={listaDeTopicos} />
       <Sobre />
       <SobreAClinica object={sobreAClinicaObject} />
