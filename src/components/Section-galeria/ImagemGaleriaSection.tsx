@@ -1,5 +1,5 @@
 import styles from './ImagemGaleriaSection.module.css';
-import Imagem from '../../assets/ImagemGaleria1.jpeg';
+import Imagem from '../../assets/ImagemGaleria.jpeg';
 
 export function ImagemGaleriaSection() {
     return (
