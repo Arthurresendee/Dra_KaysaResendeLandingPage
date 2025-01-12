@@ -1,4 +1,7 @@
 import styles from "./TopicoSection.module.css";
+import { ScrollAnimation } from "../ScrollAnimation";
+// import { PlanoDeFundo } from "../PlanoDeFundo";
+// import ImgFundo from '../../assets/backgroundSobre.jpg';
 
 interface Card {
   titulo: string;
@@ -6,7 +9,7 @@ interface Card {
 }
 
 export interface Topico {
-  id: Number;
+  id: number;
   tituloTopico: string;
   cards: Card[];
 }
@@ -17,24 +20,27 @@ interface TopicoType {
 
 export function TopicoSection({ topicos }: TopicoType) {
   return (
+    // <PlanoDeFundo imagemDeFundoURL={ImgFundo}>
+
     <div className={styles.topicos}>
-      {topicos.map((topico) => {
-        return (
+      {topicos.map((topico) => (
+        <ScrollAnimation key={topico.id}>
           <div className={styles.container}>
             <h2 className={styles.TituloTopico}>{topico.tituloTopico}</h2>
             <div className={styles.containerCards}>
-              {topico.cards.map((card) => {
-                return (
+              {topico.cards.map((card, index) => (
+                <ScrollAnimation key={index}>
                   <div className={styles.card}>
                     <h3>{card.titulo}</h3>
                     <p>{card.texto}</p>
                   </div>
-                );
-              })}
+                </ScrollAnimation>
+              ))}
             </div>
           </div>
-        );
-      })}
+        </ScrollAnimation>
+      ))}
     </div>
+    // </PlanoDeFundo>
   );
 }

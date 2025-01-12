@@ -1,6 +1,8 @@
 import styles from './Conteudo.module.css'
 
 import imagemDra from '../../assets/kaysaabout.jpg'
+import { ScrollAnimation } from "../ScrollAnimation";
+
 
 export interface Paragrafo {
    conteudo: string
@@ -19,16 +21,27 @@ export function Conteudo({ conteudoCompleto }: ConteudoFinal) {
    return (
       <div className={styles.conteudo}>
          <div className={styles.container}>
+
             <div className={styles.imagem}>
-               <img src={imagemDra} alt="Dra. Kaysa" />
+               <ScrollAnimation>
+                  <img src={imagemDra} alt="Dra. Kaysa" />
+
+               </ScrollAnimation>
             </div>
             <div className={styles.texto}>
+         <ScrollAnimation>
+
                <h1 className={styles.titulo}>{conteudoCompleto.titulo}</h1>
                <ul className={styles.lista}>
                   {conteudoCompleto.topicos.map((topico, index) => (
-                     <li key={index} className={styles.paragrafo}>{topico.conteudo}</li>
+                     <ScrollAnimation>
+
+                        <li key={index} className={styles.paragrafo}>{topico.conteudo}</li>
+                     </ScrollAnimation>
                   ))}
                </ul>
+         </ScrollAnimation>
+
             </div>
          </div>
       </div>

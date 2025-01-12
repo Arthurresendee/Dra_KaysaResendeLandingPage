@@ -3,7 +3,7 @@ import styles from "./PlanoDeFundo.module.css";
 
 type BackgroundSessao = {
   children: React.ReactNode;
-  imagemDeFundoURL: string;
+  imagemDeFundoURL?: string;
   heightSessao?:string;
 };
 

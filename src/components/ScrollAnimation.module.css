@@ -1,0 +1,24 @@
+.hidden {
+    opacity: 0;
+    transform: translateY(20px); /* Posição inicial: deslocado para baixo */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+  
+  .visibleFromBottom {
+    opacity: 1;
+    transform: translateY(0); /* Retorna para a posição original */
+  }
+  
+  .visibleFromTop {
+    opacity: 1;
+    transform: translateY(0); /* Retorna para a posição original */
+  }
+  
+  .hidden.visibleFromTop {
+    transform: translateY(-20px); /* Vem de cima para baixo */
+  }
+  
+  .hidden.visibleFromBottom {
+    transform: translateY(20px); /* Vem de baixo para cima */
+  }
+  
