@@ -4,7 +4,7 @@ import { PlanoDeFundo } from '../PlanoDeFundo';
 
 export function Home() {
   return (
-    <PlanoDeFundo imagemDeFundoURL={ImgHome}>
+    <PlanoDeFundo imagemDeFundoURL={ImgHome} heightSessao='100vh'>
       <HorarioFuncionamento />
     </PlanoDeFundo>
   );

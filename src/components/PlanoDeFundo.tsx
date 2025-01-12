@@ -4,13 +4,13 @@ import styles from "./PlanoDeFundo.module.css";
 type BackgroundSessao = {
   children: React.ReactNode;
   imagemDeFundoURL: string;
-  min_height?:string;
+  heightSessao?:string;
 };
 
-export function PlanoDeFundo({ children, imagemDeFundoURL, min_height }: BackgroundSessao) {
+export function PlanoDeFundo({ children, imagemDeFundoURL, heightSessao}: BackgroundSessao) {
   const backgroundStyle = {
     backgroundImage: `url(${imagemDeFundoURL})`,
-    minHeight: min_height || "100vh"
+    height: heightSessao || "100vh"
   };
 
   return (

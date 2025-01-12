@@ -6,7 +6,7 @@ import { IrParaGaleriaSection } from './IrParaGaleriaSection';
 
 export function Galeria() {
     return (
-        <PlanoDeFundo imagemDeFundoURL={ImgFundo} min_height="60vh">
+        <PlanoDeFundo imagemDeFundoURL={ImgFundo} heightSessao="80vh">
             <div className={styles.galeriaContainer}>
                 <div className={styles.sectionEsquerda}>
                     <ImagemGaleriaSection />

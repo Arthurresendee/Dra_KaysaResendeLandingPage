@@ -1,0 +1,73 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.8); /* Fundo translúcido escuro */
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    margin: 20px 30px;
+    max-width: 800px;
+    /* height: 60%; */
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out;
+
+}
+
+.container:hover {
+    transform: scale(1.05); /* Pequeno zoom para chamar atenção */
+}
+
+.titulo h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #d4a65a; /* Amarelo dourado para destaque */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    margin-bottom: 20px;
+}
+
+.titulo p {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #fff; /* Texto branco para contraste */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+    line-height: 1.6;
+}
+
+.titulo p strong {
+    color: #d4a65a; /* Destaque em dourado */
+    font-weight: bold;
+    background: rgba(255, 215, 0, 0.2); /* Fundo dourado suave */
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.botaoContainer {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botao {
+    display: inline-block;
+    background: linear-gradient(135deg, #333, #555); /* Gradiente escuro */
+    color: #d4a65a; /* Texto dourado para destaque */
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 15px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease-in-out;
+}
+
+.botao:hover {
+    /* transform: scale(1.05); */
+    background: linear-gradient(135deg, #555, #777); /* Gradiente mais claro no hover */
+    color: #fff; /* Texto branco no hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+}

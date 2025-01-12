@@ -1,6 +1,7 @@
 .galeriaContainer {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    height: 80vh;
  }
  
  .sectionEsquerda {
@@ -15,6 +16,5 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: #e0e0e0; */
  }
  
