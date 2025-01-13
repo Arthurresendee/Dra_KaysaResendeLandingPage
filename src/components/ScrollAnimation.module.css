@@ -1,24 +1,46 @@
+/* Estado inicial - elementos fora do viewport */
 .hidden {
-    opacity: 0;
-    transform: translateY(20px); /* Posição inicial: deslocado para baixo */
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-  }
-  
-  .visibleFromBottom {
-    opacity: 1;
-    transform: translateY(0); /* Retorna para a posição original */
-  }
-  
-  .visibleFromTop {
-    opacity: 1;
-    transform: translateY(0); /* Retorna para a posição original */
-  }
-  
-  .hidden.visibleFromTop {
-    transform: translateY(-20px); /* Vem de cima para baixo */
-  }
-  
-  .hidden.visibleFromBottom {
-    transform: translateY(20px); /* Vem de baixo para cima */
-  }
-  
+   opacity: 0;
+   transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+ }
+ 
+ /* Entrada de baixo */
+ .hiddenFromBottom {
+   transform: translateY(20px); /* Posição inicial deslocada para baixo */
+ }
+ 
+ .visibleFromBottom {
+   opacity: 1;
+   transform: translateY(0); /* Retorna para posição original */
+ }
+ 
+ /* Entrada de cima */
+ .hiddenFromTop {
+   transform: translateY(-20px); /* Posição inicial deslocada para cima */
+ }
+ 
+ .visibleFromTop {
+   opacity: 1;
+   transform: translateY(0); /* Retorna para posição original */
+ }
+ 
+ /* Entrada pela esquerda */
+ .hiddenFromLeft {
+   transform: translateX(-20px); /* Posição inicial deslocada para a esquerda */
+ }
+ 
+ .visibleFromLeft {
+   opacity: 1;
+   transform: translateX(0); /* Retorna para posição original */
+ }
+ 
+ /* Entrada pela direita */
+ .hiddenFromRight {
+   transform: translateX(20px); /* Posição inicial deslocada para a direita */
+ }
+ 
+ .visibleFromRight {
+   opacity: 1;
+   transform: translateX(0); /* Retorna para posição original */
+ }
+ 

@@ -1,20 +1,30 @@
 .galeriaContainer {
-    display: flex;
-    /* justify-content: space-between; */
-    height: 80vh;
+   display: flex;
+   flex-wrap: wrap; /* Permite que os elementos fiquem responsivos */
+   justify-content: space-between;
+   align-items: center;
+   height: 80vh;
+   gap: 5rem; /* Espaçamento entre as seções */
+   padding: 20px;
  }
  
- .sectionEsquerda {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
- }
- 
+ .sectionEsquerda,
  .sectionDireita {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+   flex: 1 1 45%; /* Permite que cada seção ocupe 45% com flexibilidade */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   max-width: 600px; /* Limite para as seções em telas grandes */
+ }
+ 
+ @media (max-width: 768px) {
+   .galeriaContainer {
+     flex-direction: column;
+   }
+ 
+   .sectionEsquerda,
+   .sectionDireita {
+     flex: 1 1 100%; /* Ocupam 100% da largura em telas menores */
+   }
  }
  
