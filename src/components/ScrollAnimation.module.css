@@ -1,46 +1,44 @@
-/* Estado inicial - elementos fora do viewport */
+
 .hidden {
    opacity: 0;
    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
  }
  
- /* Entrada de baixo */
+
  .hiddenFromBottom {
-   transform: translateY(20px); /* Posição inicial deslocada para baixo */
+   transform: translateY(50px);
  }
  
  .visibleFromBottom {
    opacity: 1;
-   transform: translateY(0); /* Retorna para posição original */
+   transform: translateY(0);
  }
  
- /* Entrada de cima */
  .hiddenFromTop {
-   transform: translateY(-20px); /* Posição inicial deslocada para cima */
+   transform: translateY(-100px);
  }
  
  .visibleFromTop {
    opacity: 1;
-   transform: translateY(0); /* Retorna para posição original */
+   transform: translateY(0);
  }
  
- /* Entrada pela esquerda */
  .hiddenFromLeft {
-   transform: translateX(-20px); /* Posição inicial deslocada para a esquerda */
+   transform: translateX(-200px);
  }
  
  .visibleFromLeft {
    opacity: 1;
-   transform: translateX(0); /* Retorna para posição original */
+   transform: translateX(0);
  }
  
- /* Entrada pela direita */
+
  .hiddenFromRight {
-   transform: translateX(20px); /* Posição inicial deslocada para a direita */
+   transform: translateX(200px);
  }
  
  .visibleFromRight {
    opacity: 1;
-   transform: translateX(0); /* Retorna para posição original */
+   transform: translateX(0);
  }
  

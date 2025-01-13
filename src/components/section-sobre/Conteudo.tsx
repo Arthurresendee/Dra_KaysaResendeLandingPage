@@ -23,24 +23,24 @@ export function Conteudo({ conteudoCompleto }: ConteudoFinal) {
          <div className={styles.container}>
 
             <div className={styles.imagem}>
-               <ScrollAnimation>
+               <ScrollAnimation direction='left'>
                   <img src={imagemDra} alt="Dra. Kaysa" />
 
                </ScrollAnimation>
             </div>
             <div className={styles.texto}>
-         <ScrollAnimation>
+         <ScrollAnimation direction='left'>
 
                <h1 className={styles.titulo}>{conteudoCompleto.titulo}</h1>
+                  </ScrollAnimation>
                <ul className={styles.lista}>
                   {conteudoCompleto.topicos.map((topico, index) => (
-                     <ScrollAnimation>
+                     <ScrollAnimation direction='left'>
 
                         <li key={index} className={styles.paragrafo}>{topico.conteudo}</li>
                      </ScrollAnimation>
                   ))}
                </ul>
-         </ScrollAnimation>
 
             </div>
          </div>
