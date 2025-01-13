@@ -4,7 +4,7 @@ import ImgFundo from "../../assets/backgroundSobre.jpg";
 import { ImagemGaleriaSection } from "./ImagemGaleriaSection";
 import { IrParaGaleriaSection } from "./IrParaGaleriaSection";
 
-export function Galeria() {
+export function GaleriaSection() {
   return (
     <PlanoDeFundo imagemDeFundoURL={ImgFundo} heightSessao="80vh">
       <div className={styles.galeriaContainer}>
