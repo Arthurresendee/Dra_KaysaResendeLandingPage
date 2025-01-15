@@ -20,12 +20,12 @@
  .texto {
    font-size: 1.2rem;
    color: #555;
-   margin-top: 10px;
+   margin-top: 0.625rem;
  }
  
-.botao {
-   margin-top: 20px;
-   padding: 10px 20px;
+ .botao {
+   margin-top: 1.25rem;
+   padding: 0.625rem 1.25rem;
    font-size: 1rem;
    color: #fff;
    background-color: #007bff;
@@ -38,4 +38,12 @@
  .botao:hover {
    background-color: #0056b3;
  }
- 
+
+ @media (max-width: 768px) { 
+   .titulo {
+     font-size: 2rem; 
+   }
+   .texto {
+     font-size: 1rem; 
+   }
+ }

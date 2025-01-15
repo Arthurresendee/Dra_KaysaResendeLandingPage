@@ -11,7 +11,10 @@
    --green-300: #00B37E;
    --green-500: #00875f;
 
-   --red-500: #F75A68
+   --red-500: #F75A68;
+
+   font-size: 16px;
+   /* font-size: 1rem; */
 }
 
 * {
@@ -29,5 +32,5 @@ body{
 body, input, textarea, button{
    font-family: 'Roboto',sans-serif ;
    font-weight: 400;
-   font-size: 1rem;
+   
 }

@@ -11,7 +11,7 @@ export function IrParaGaleriaSection() {
   };
 
   const handleVoltar = () => {
-    setMostrarManutencao(false); // Retorna ao conteúdo anterior
+    setMostrarManutencao(false);
   };
 
   return (

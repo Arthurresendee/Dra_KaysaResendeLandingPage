@@ -3,29 +3,28 @@ import styles from "./ScrollAnimation.module.css";
 
 interface ScrollAnimationProps {
   children: React.ReactNode;
-  direction?: "bottom" | "top" | "left" | "right"; // Direção da entrada (opcional)
+  direction?: "bottom" | "top" | "left" | "right";
 }
 
 export const ScrollAnimation: React.FC<ScrollAnimationProps> = ({ children, direction = "bottom" }) => {
   const elementRef = useRef<HTMLDivElement | null>(null);
-  const [lastScrollY, setLastScrollY] = useState(0); // Rastreamento do último scroll
+  const [lastScrollY, setLastScrollY] = useState(0);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
         const entry = entries[0];
-        const currentScrollY = window.scrollY; // Obter posição atual do scroll
-        const isScrollingDown = currentScrollY > lastScrollY; // Verificar direção do scroll
+        const currentScrollY = window.scrollY;
+        const isScrollingDown = currentScrollY > lastScrollY;
 
         if (entry.isIntersecting) {
-          // Escolher a classe de animação baseada na direção
+
           const animationClass = isScrollingDown
             ? styles[`visibleFrom${capitalize(direction)}`]
             : styles[`visibleFrom${capitalize(direction)}`];
 
           entry.target.classList.add(animationClass);
         } else {
-          // Resetar classes quando o elemento sai da tela
           entry.target.classList.remove(
             styles.visibleFromBottom,
             styles.visibleFromTop,
@@ -34,7 +33,7 @@ export const ScrollAnimation: React.FC<ScrollAnimationProps> = ({ children, dire
           );
         }
 
-        setLastScrollY(currentScrollY); // Atualizar o último valor do scroll
+        setLastScrollY(currentScrollY);
       },
       { threshold: 0.1 }
     );
@@ -49,7 +48,6 @@ export const ScrollAnimation: React.FC<ScrollAnimationProps> = ({ children, dire
     };
   }, [direction, lastScrollY]);
 
-  // Função para capitalizar a primeira letra da direção
   const capitalize = (str: string) => str.charAt(0).toUpperCase() + str.slice(1);
 
   return (

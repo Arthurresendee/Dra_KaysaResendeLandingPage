@@ -1,39 +1,39 @@
 .sobre_a_clinica {
-   border-top: 5px solid white;
+   border-top: 0.3125rem solid white;
    position: relative;
    width: 100%;
    display: flex;
    flex-direction: column;
-   /* Alterar para coluna em telas menores */
    align-items: center;
-   padding: 20px;
+   padding: 1.25rem;
    box-sizing: border-box;
    background-color: #f4efe9;
  }
  
  .sobre_a_clinica_texto {
-   max-width: 800px;
+   max-width: 50rem;
    text-align: center;
    flex: 1;
-   margin: 25px 0px 45px 0px;
-   /* Adiciona espaço entre texto e vídeo em telas menores */
-   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+   margin: 1.5625rem 0 2.8125rem 0;
+   text-shadow: 0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.5);
  }
+ 
  .sobre_a_clinica_texto .p1 {
-   font-size: 58px;
+   font-size: 3.625rem;
    font-family: "Merriweather", serif;
    font-weight: 700;
    font-style: normal;
-   letter-spacing: -0.06em;
+   letter-spacing: -0.0625rem;
    color: #102947;
  }
+ 
  .sobre_a_clinica_texto .p2 {
-   font-size: 30px;
-   margin-bottom: 15px;
+   font-size: 1.875rem;
+   margin-bottom: 0.9375rem;
    font-family: "Jost", sans-serif;
    font-weight: 400;
    font-style: normal;
-   letter-spacing: 0.09em;
+   letter-spacing: 0.09375rem;
    color: #102947;
  }
  
@@ -42,15 +42,54 @@
    display: flex;
    justify-content: center;
    width: 100%;
-   /* Garante que o vídeo ocupe toda a largura disponível */
  }
  
  .area_video iframe {
    width: 100%;
-   max-width: 850px;
-   /* Define o tamanho máximo do iframe */
-   height: 500px;
-   border-radius: 10px;
-   box-shadow: 0px 10px 30px 5px rgba(0, 0, 0, 0.5);
-   margin-bottom: 40px;
+   max-width: 53.125rem;
+   height: 31.25rem;
+   border-radius: 0.625rem;
+   box-shadow: 0px 0.625rem 1.875rem 0.3125rem rgba(0, 0, 0, 0.5);
+   margin-bottom: 2.5rem;
  }
+ 
+ @media (max-width: 768px) {
+   .sobre_a_clinica {
+     padding: 1rem;
+   }
+ 
+   .sobre_a_clinica_texto {
+     max-width: 90%;
+     margin: 1rem 0 2rem 0;
+   }
+   .sobre_a_clinica_texto .p1 {
+     font-size: 2.5rem;
+   }
+ 
+   .sobre_a_clinica_texto .p2 {
+     font-size: 1.5rem;
+   }
+ 
+   .area_video iframe {
+     max-width: 90%;
+     height: 20rem;
+     margin-bottom: 1.5rem;
+   }
+ }
+ 
+ @media (max-width: 480px) {
+   .sobre_a_clinica_texto .p1 {
+     font-size: 2rem;
+     margin: 0;
+   }
+ 
+   .sobre_a_clinica_texto .p2 {
+     font-size: 1rem;
+     margin: 0;
+   }
+ 
+   .area_video iframe {
+     height: 15rem;
+   }
+ }
+ 

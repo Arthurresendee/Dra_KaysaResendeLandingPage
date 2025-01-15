@@ -1,7 +1,5 @@
 import styles from "./TopicoSection.module.css";
 import { ScrollAnimation } from "../ScrollAnimation";
-// import { PlanoDeFundo } from "../PlanoDeFundo";
-// import ImgFundo from '../../assets/backgroundSobre.jpg';
 
 interface Card {
   titulo: string;
@@ -20,7 +18,6 @@ interface TopicoType {
 
 export function TopicoSection({ topicos }: TopicoType) {
   return (
-    // <PlanoDeFundo imagemDeFundoURL={ImgFundo}>
 
     <div className={styles.topicos}>
       {topicos.map((topico) => (
