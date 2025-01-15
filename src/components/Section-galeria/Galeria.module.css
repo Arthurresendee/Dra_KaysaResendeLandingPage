@@ -1,19 +1,18 @@
 .galeriaContainer {
    background: linear-gradient(135deg, #1e1e1e, #333);
-   /* background-image: url(../../assets/backgroundSobre.jpg); */
    background-size: cover;
    background-position: center;
    background-repeat: no-repeat;
    height: auto;
    display: flex;
-   flex-wrap: wrap; /* Permite quebra de linha */
-   justify-content: space-around; /* Distribui espaço entre os itens */
+   flex-wrap: wrap;
+   justify-content: space-around;
    align-items: center;
    padding: 20px;
-   gap: 30px; /* Reduz o espaço em branco entre itens */
-   border-radius: 15px; /* Suaviza os cantos */
-   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Sombra elegante */
-   overflow: hidden; /* Garante que os elementos não "vazem" */
+   gap: 30px;
+   border-radius: 15px;
+   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+   overflow: hidden;
  }
  
  .sectionEsquerda,

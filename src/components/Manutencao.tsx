@@ -1,4 +1,3 @@
-// components/Manutencao.tsx
 import styles from "./Manutencao.module.css";
 
 interface ManutencaoProps {
