@@ -1,5 +1,3 @@
-import ImgFundo from '../../assets/backgroundSobre.jpg'
-import { PlanoDeFundo } from '../PlanoDeFundo';
 import { Content, Conteudo, ConteudoFinal } from './Conteudo';
 import { Paragrafo } from './Conteudo';
 
@@ -31,8 +29,6 @@ console.log(conteudoFinal)
 
 export function Sobre() {
    return (
-      <PlanoDeFundo imagemDeFundoURL={ImgFundo} heightSessao='80vh'>
          <Conteudo conteudoCompleto={conteudoFinal.conteudoCompleto} />
-      </PlanoDeFundo>
    );
 }

@@ -1,0 +1,44 @@
+.sectionHome {
+   width: 100%;
+   height: 100vh;
+   position: relative;
+   overflow: hidden;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: end;
+ }
+ 
+ .backgroundWrapper {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   z-index: -1;
+ }
+ 
+ .backgroundImage {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+ }
+ 
+ .overlayContent {
+   position: relative;
+   color: #fff;
+   text-align: center;
+   z-index: 1;
+ }
+ 
+ .overlayContent h1 {
+   font-size: 2rem;
+   margin: 0;
+ }
+ 
+ @media (max-width: 768px) {
+   .overlayContent h1 {
+     font-size: 1.5rem;
+   }
+ }
+ 
