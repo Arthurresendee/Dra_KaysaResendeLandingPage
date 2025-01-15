@@ -24,11 +24,6 @@ const listaDeTopicos: Topico[] = [
     tituloTopico: "Benefícios",
     cards: [
       {
-        titulo: "Estética natural",
-        texto:
-          "Quando bem executadas, as facetas em resina oferecem uma aparência natural, imitando a translucidez e cor dos dentes.",
-      },
-      {
         titulo: "Melhora Estética",
         texto:
           "Transforma a aparência dos dentes, corrigindo imperfeições como manchas, descolorações, desgastes, espaçamentos e desalinhamentos leves.",
@@ -38,26 +33,31 @@ const listaDeTopicos: Topico[] = [
         texto:
           "Diferente das facetas de porcelana, as facetas em resina podem ser aplicadas com mínimo ou nenhum desgaste da estrutura dental natural.",
       },
+      {
+        titulo: "Estética natural",
+        texto:
+          "As facetas em resina proporcionam uma aparência altamente natural, reproduzindo com precisão a translucidez, o brilho e a cor dos dentes, garantindo um sorriso harmonioso e autêntico.",
+      },
     ],
   },
   {
     id: 2,
-    tituloTopico: "Etapas das Facetas",
+    tituloTopico: "Perguntas Frequentes",
     cards: [
       {
-        titulo: "Consulta Inicial",
+        titulo: "Quanto tempo dura o tratamento?",
         texto:
-          "O dentista faz uma avaliação completa e um planejamento individualizado do paciente.",
+          "Para facetas de resina, o procedimento dura cerca de 5 horas, pois cada dente é esculpido à mão com muita precisão e delicadeza.",
       },
       {
-        titulo: "Preparação",
+        titulo: "As facetas são resistentes?",
         texto:
-          "São feitos procedimentos prévios, como exame radiográfico, avaliação clínica detalhada e um protocolo fotográfico.",
+          "Sim, porém, é importante evitar hábitos como roer unhas, morder objetos duros e ranger os dentes, pois esses comportamentos podem comprometer a durabilidade.",
       },
       {
-        titulo: "Aplicação",
+        titulo: "Qual é o custo do procedimento?",
         texto:
-          "A faceta é colocada e ajustada no dente, sendo esculpida à mão livre pelo profissional, garantindo uma adaptação perfeita e um sorriso individualizado.",
+          "O custo varia do número de dentes e da complexidade do caso. A melhor forma de determinar o valor é agendar uma consulta para avaliar as suas necessidades.",
       },
     ],
   },

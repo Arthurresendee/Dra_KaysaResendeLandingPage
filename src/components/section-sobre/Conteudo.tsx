@@ -23,9 +23,9 @@ export function Conteudo({ conteudoCompleto }: { conteudoCompleto: Content }) {
           <div className={styles.container}>
             <div className={styles.imageWrapper}>
               <ScrollAnimation direction="left">
-                <img 
-                  src={imagemDra} 
-                  alt="Dra. Kaysa" 
+                <img
+                  src={imagemDra}
+                  alt="Dra. Kaysa"
                   className={styles.image}
                 />
               </ScrollAnimation>
