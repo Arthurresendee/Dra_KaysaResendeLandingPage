@@ -10,7 +10,7 @@
  }
  
  .container > p {
-   font-size: 1.2rem; /* Adjust font size for smaller screens */
+   font-size: 2rem; /* Adjust font size for smaller screens */
  }
  
  .contact_button {
@@ -28,4 +28,9 @@
  
  .contact_button:hover {
    background-color: rgb(223, 69, 69);
+ }
+ @media (max-width: 500px) {
+   .container > p {
+     font-size: 1.5rem; /* Adjust font size for even smaller screens */
+   }
  }

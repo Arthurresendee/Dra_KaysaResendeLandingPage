@@ -1,38 +1,66 @@
 .galeriaContainer {
+   /* background: linear-gradient(135deg, #1e1e1e, #333); Gradiente moderno */
+   background-image: url(../../assets/backgroundSobre.jpg);
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   height: auto;
    display: flex;
-   flex-wrap: wrap;
-   justify-content: space-between;
+   flex-wrap: wrap; /* Permite quebra de linha */
+   justify-content: space-around; /* Distribui espaço entre os itens */
    align-items: center;
-   height: 80vh;
    padding: 20px;
+   gap: 30px; /* Reduz o espaço em branco entre itens */
+   border-radius: 15px; /* Suaviza os cantos */
+   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Sombra elegante */
+   overflow: hidden; /* Garante que os elementos não "vazem" */
  }
  
  .sectionEsquerda,
- .sectionDireita {
-   flex: 1 1 45%;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   max-width: 600px;
- }
+.sectionDireita {
+  flex: 1 1 45%; /* Aumenta a largura para 45% do container */
+  max-width: 600px; /* Aumenta o limite máximo para 600px */
+  min-width: 320px; /* Aumenta o limite mínimo para 320px */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px; /* Aumenta levemente o padding */
+  background: rgba(255, 255, 255, 0.05); /* Fundo semi-transparente */
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
  
  .sectionEsquerda {
-   margin-right: 3rem;
-}
-
-.sectionDireita {
-   margin-left: 3rem;
-}
-
-
- @media (max-width: 768px) {
+   margin-right: 1rem; /* Ajusta margens */
+ }
+ 
+ .sectionDireita {
+   margin-left: 1rem; /* Ajusta margens */
+ }
+ 
+ @media (max-width: 1024px) {
    .galeriaContainer {
      flex-direction: column;
+     height: auto;
+     gap: 20px;
    }
  
    .sectionEsquerda,
    .sectionDireita {
-     flex: 1 1 100%;
+     flex: 1 1 80%; /* Os itens ocupam 80% da largura em telas menores */
+     margin: 10px 0; /* Espaçamento vertical entre itens */
+   }
+ }
+ 
+ @media (max-width: 768px) {
+   .galeriaContainer {
+     padding: 15px;
+   }
+ 
+   .sectionEsquerda,
+   .sectionDireita {
+     padding: 15px; /* Reduz o padding em telas menores */
    }
  }
  

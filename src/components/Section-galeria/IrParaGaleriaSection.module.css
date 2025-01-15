@@ -4,55 +4,47 @@
    justify-content: center;
    align-items: center;
    text-align: center;
-   padding: 30px;
-   background: rgba(0, 0, 0, 0.8);
+   padding: 4rem 3rem;
+   background: linear-gradient(145deg, #222, #444); /* Gradiente suave */
    border-radius: 15px;
-   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
-   max-width: 500px;
+   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4); /* Destaque visual */
+   max-width: 450px; /* Ajusta largura */
    width: 100%;
+   gap: 15px;
  }
  
  .titulo {
-   font-size: 2.5rem;
+   font-size: 2.5rem; /* Ajusta tamanho */
    font-weight: bold;
    color: #d4a65a;
-   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-   margin-bottom: 20px;
+   margin-bottom: 15px;
  }
  
  .texto {
-   font-size: 1.2rem;
+   font-size: 1rem; /* Ajusta tamanho */
    font-weight: 500;
-   color: #fff;
-   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
-   line-height: 1.6;
- }
- 
- .texto strong {
-   color: #d4a65a;
-   font-weight: bold;
-   padding: 5px 10px;
-   border-radius: 5px;
+   color: #ddd;
+   line-height: 1.5;
  }
  
  .botaoContainer {
-   margin-top: 30px;
+   margin-top: 15px;
  }
  
  .botao {
-   background: linear-gradient(135deg, #333, #555);
-   color: #d4a65a;
-   font-size: 1.2rem;
+   background: linear-gradient(135deg, #d4a65a, #d0b77a);
+   color: #222;
+   font-size: 1rem;
    font-weight: bold;
-   padding: 10px 20px;
-   border-radius: 8px;
+   padding: 12px 20px;
+   border-radius: 10px;
    text-decoration: none;
-   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
    transition: all 0.3s ease-in-out;
  }
  
  .botao:hover {
-   background: linear-gradient(135deg, #555, #777);
-   color: #fff;
+   background: linear-gradient(135deg, #d0b77a, #d4a65a);
+   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
  }
  

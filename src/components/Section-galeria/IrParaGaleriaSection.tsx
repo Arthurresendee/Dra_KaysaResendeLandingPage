@@ -19,7 +19,7 @@ export function IrParaGaleriaSection() {
       {mostrarManutencao ? (
         <Manutencao onVoltar={handleVoltar} />
       ) : (
-        <ScrollAnimation direction="right">
+        <ScrollAnimation direction="left">
           <div className={styles.container}>
             <h1 className={styles.titulo}>Agora chegou a sua Hora!</h1>
             <p className={styles.texto}>
