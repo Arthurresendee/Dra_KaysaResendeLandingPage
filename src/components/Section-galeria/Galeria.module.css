@@ -1,6 +1,6 @@
 .galeriaContainer {
-   /* background: linear-gradient(135deg, #1e1e1e, #333); Gradiente moderno */
-   background-image: url(../../assets/backgroundSobre.jpg);
+   background: linear-gradient(135deg, #1e1e1e, #333);
+   /* background-image: url(../../assets/backgroundSobre.jpg); */
    background-size: cover;
    background-position: center;
    background-repeat: no-repeat;
@@ -18,25 +18,25 @@
  
  .sectionEsquerda,
 .sectionDireita {
-  flex: 1 1 45%; /* Aumenta a largura para 45% do container */
-  max-width: 600px; /* Aumenta o limite máximo para 600px */
-  min-width: 320px; /* Aumenta o limite mínimo para 320px */
+  flex: 1 1 45%;
+  max-width: 600px;
+  min-width: 320px;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 25px; /* Aumenta levemente o padding */
-  background: rgba(255, 255, 255, 0.05); /* Fundo semi-transparente */
+  padding: 25px;
+  background: rgba(255, 255, 255, 0.05);
   border-radius: 10px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
  
  .sectionEsquerda {
-   margin-right: 1rem; /* Ajusta margens */
+   margin-right: 1rem;
  }
  
  .sectionDireita {
-   margin-left: 1rem; /* Ajusta margens */
+   margin-left: 1rem;
  }
  
  @media (max-width: 1024px) {
@@ -48,8 +48,8 @@
  
    .sectionEsquerda,
    .sectionDireita {
-     flex: 1 1 80%; /* Os itens ocupam 80% da largura em telas menores */
-     margin: 10px 0; /* Espaçamento vertical entre itens */
+     flex: 1 1 80%;
+     margin: 10px 0;
    }
  }
  
@@ -60,7 +60,7 @@
  
    .sectionEsquerda,
    .sectionDireita {
-     padding: 15px; /* Reduz o padding em telas menores */
+     padding: 15px;
    }
  }
  

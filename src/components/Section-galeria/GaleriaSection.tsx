@@ -1,4 +1,3 @@
-import { ScrollAnimation } from "../ScrollAnimation";
 import styles from "./Galeria.module.css";
 import { ImagemGaleriaSection } from "./ImagemGaleriaSection";
 import { IrParaGaleriaSection } from "./IrParaGaleriaSection";

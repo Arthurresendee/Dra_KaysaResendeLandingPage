@@ -1,20 +1,20 @@
 .imagemContainer {
    width: 100%;
-   max-width: 400px; /* Limita a largura */
+   max-width: 400px;
    height: auto;
-   border-radius: 12px; /* Bordas arredondadas */
+   border-radius: 12px;
    overflow: hidden;
-   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Sombra elegante */
-   transition: transform 0.3s ease; /* Efeito de interação */
+   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+   transition: transform 0.3s ease;
  }
  
  .imagemContainer:hover {
-   transform: scale(1.05); /* Aumenta levemente ao passar o mouse */
+   transform: scale(1.05);
  }
  
  .imagem {
    width: 100%;
    height: auto;
-   object-fit: cover; /* Ajusta a imagem ao espaço */
+   object-fit: cover;
  }
  
