@@ -1,7 +1,7 @@
 import "./index.css";
 
 import { LinksSociais } from "./components/LinksSociais";
-import { Home } from "./components/section-home/Home.tsx";
+import { Hero } from "./components/section-hero/Hero.tsx";
 import {
   Topico,
   TopicoSection,
@@ -74,7 +74,7 @@ export function App() {
   return (
     <div>
       <LinksSociais />
-      <Home />
+      <Hero />
       <GaleriaSection />
       <TopicoSection topicos={listaDeTopicos} />
       <Sobre />

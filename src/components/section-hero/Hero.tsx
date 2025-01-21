@@ -1,12 +1,12 @@
-import styles from './Home.module.css'; 
-import ImgHome from '../../assets/ImgHome.jpg';
+import styles from './Hero.module.css'; 
+import ImgHero from '../../assets/ImgHero.jpg';
 import { HorarioFuncionamento } from './HorarioFuncionamento';
 
-export function Home() {
+export function Hero() {
   return (
-    <div className={styles.sectionHome}>
+    <div className={styles.sectionHero}>
       <div className={styles.backgroundWrapper}>
-        <img className={styles.backgroundImage} src={ImgHome} alt="Imagem da Home" />
+        <img className={styles.backgroundImage} src={ImgHero} alt="Imagem Hero" />
       </div>
       <div className={styles.overlayContent}>
         <HorarioFuncionamento />
