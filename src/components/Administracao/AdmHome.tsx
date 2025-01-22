@@ -3,7 +3,7 @@
 export function AdmHome(){
    return (
       <div>
-         <h1>Página de Administração da Home</h1>
+         <h1>AdmHome</h1>
       </div>
    )
 }

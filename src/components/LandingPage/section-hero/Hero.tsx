@@ -1,5 +1,5 @@
 import styles from './Hero.module.css'; 
-import ImgHero from '../../assets/ImgHero.jpg';
+import ImgHero from '../../../assets/ImgHero.jpg';
 import { HorarioFuncionamento } from './HorarioFuncionamento';
 
 export function Hero() {

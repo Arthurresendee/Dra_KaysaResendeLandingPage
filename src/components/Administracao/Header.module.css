@@ -1,11 +1,11 @@
 .header {
-   background-color: #3498db;
+   background: rgba(18, 18, 20, 0.95);
    padding: 1rem 2rem;
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
-   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-   color: #fff;
+   position: sticky;
+   top: 0;
+   z-index: 1000;
+   backdrop-filter: blur(10px);
+   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
  }
  
  .container {
@@ -17,10 +17,15 @@
    margin: 0 auto;
  }
  
- .title {
-   font-size: 1.5rem;
-   font-weight: bold;
-   color: #fff;
+ .logoContainer {
+   display: flex;
+   align-items: center;
+ }
+ 
+ .logo {
+   width: 40px;  /* Aumentei a largura */
+   height: 40px;  /* Mantive a altura */
+   object-fit: contain;
  }
  
  .nav {
@@ -29,7 +34,7 @@
  
  .menu {
    display: flex;
-   gap: 1.5rem;
+   gap: 2rem;
    list-style: none;
    margin: 0;
    padding: 0;
@@ -37,17 +42,59 @@
  
  .item {
    display: inline;
+   position: relative;
  }
  
  .link {
-   color: #fff;
+   color: #e1e1e6;
    text-decoration: none;
    font-size: 1rem;
    font-weight: 500;
-   transition: color 0.3s;
+   padding: 0.5rem 0;
+   position: relative;
+   transition: color 0.3s ease;
+ }
+ 
+ .link::after {
+   content: '';
+   position: absolute;
+   width: 0;
+   height: 2px;
+   bottom: 0;
+   left: 0;
+   background-color: #8257e5; /* Cor roxa que combina bem com temas dark */
+   transition: width 0.3s ease;
  }
  
  .link:hover {
-   color: #f1c40f;
+   color: #8257e5;
  }
  
+ .link:hover::after {
+   width: 100%;
+ }
+ 
+ /* Adicione um sutil efeito de brilho ao passar o mouse */
+ .link:hover {
+   text-shadow: 0 0 8px rgba(130, 87, 229, 0.3);
+ }
+ 
+ /* Adicione uma media query para responsividade */
+ @media (max-width: 768px) {
+   .header {
+     padding: 1rem;
+   }
+ 
+   .menu {
+     gap: 1rem;
+   }
+ 
+   .link {
+     font-size: 0.9rem;
+   }
+   
+   .logo {
+     width: 100px; /* Logo um pouco menor em telas pequenas */
+     height: 35px;
+   }
+ }

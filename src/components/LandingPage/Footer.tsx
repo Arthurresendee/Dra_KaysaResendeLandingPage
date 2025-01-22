@@ -1,9 +1,9 @@
 import styles from "./Footer.module.css";
 
-import facebookIcon from '../assets/facebook.svg';
-import instagramIcon from '../assets/instagram.svg';
-import whatsappIcon from '../assets/whatssapp.svg';
-import logoFooter from '../assets/DraKAysa.png';
+import facebookIcon from '../../assets/facebook.svg';
+import instagramIcon from '../../assets/instagram.svg';
+import whatsappIcon from '../../assets/whatssapp.svg';
+import logoFooter from '../../assets/DraKAysa.png';
 
 export function Footer() {
   return (

@@ -1,5 +1,5 @@
 import styles from "./Conteudo.module.css";
-import imagemDra from "../../assets/kaysaabout.jpg";
+import imagemDra from "../../../assets/kaysaabout.jpg";
 import { ScrollAnimation } from "../ScrollAnimation";
 
 export interface Paragrafo {
