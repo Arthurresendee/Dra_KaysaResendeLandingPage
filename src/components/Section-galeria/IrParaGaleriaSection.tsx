@@ -29,7 +29,7 @@ export function IrParaGaleriaSection() {
             </p>
             <div className={styles.botaoContainer}>
               <button className={styles.botao} onClick={handleVerDepoimentos}>
-                Ver Depoimentos e Antes & Depois
+                Ver Depoimentos / Antes & Depois
               </button>
             </div>
           </div>
