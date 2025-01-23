@@ -1,22 +1,37 @@
 .configuracoes {
    text-align: center;
    padding: 20px;
-   background-color: #f9f9f9;
+   background-color: #292941;
    border-radius: 8px;
-   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+   color: #fff;
+   flex: 1;
+ }
+ 
+ .configuracoes h2 {
+   color: #ff6f61;
+   margin-bottom: 10px;
+ }
+ 
+ .configuracoes p {
+   color: #b0b0b0;
+   margin-bottom: 20px;
  }
  
  .botao {
    padding: 10px 20px;
-   background-color: #007bff;
+   background-color: #ff6f61;
    color: white;
    border: none;
    border-radius: 5px;
    cursor: pointer;
-   transition: background-color 0.3s;
+   text-align: center;
+   font-size: 1rem;
+   transition: transform 0.3s, background-color 0.3s;
  }
  
  .botao:hover {
-   background-color: #0056b3;
+   background-color: #e85b55;
+   transform: scale(1.05);
  }
  

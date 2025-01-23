@@ -1,11 +1,12 @@
 .header {
-   background: rgba(18, 18, 20, 0.95);
+   background: linear-gradient(90deg, rgba(18, 18, 20, 0.95) 0%, rgba(34, 34, 36, 0.95) 100%);
    padding: 1rem 2rem;
    position: sticky;
    top: 0;
    z-index: 1000;
    backdrop-filter: blur(10px);
    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+   transition: all 0.3s ease;
  }
  
  .container {
@@ -23,9 +24,14 @@
  }
  
  .logo {
-   width: 40px;
+   width: 80px;
    height: 40px;
    object-fit: contain;
+   transition: transform 0.3s ease;
+ }
+ 
+ .logo:hover {
+   transform: scale(1.1);
  }
  
  .nav {
@@ -34,7 +40,7 @@
  
  .menu {
    display: flex;
-   gap: 2rem;
+   gap: 1.5rem;
    list-style: none;
    margin: 0;
    padding: 0;
@@ -52,7 +58,7 @@
    font-weight: 500;
    padding: 0.5rem 0;
    position: relative;
-   transition: color 0.3s ease;
+   transition: all 0.3s ease;
  }
  
  .link::after {
@@ -60,26 +66,21 @@
    position: absolute;
    width: 0;
    height: 2px;
-   bottom: 0;
+   bottom: -2px;
    left: 0;
-   background-color: #8257e5; /* Cor roxa que combina bem com temas dark */
+   background-color: #ff6f61;
    transition: width 0.3s ease;
  }
  
  .link:hover {
-   color: #8257e5;
+   color: #ff6f61;
+   text-shadow: 0 0 10px rgba(255, 111, 97, 0.4);
  }
  
  .link:hover::after {
    width: 100%;
  }
  
- /* Adicione um sutil efeito de brilho ao passar o mouse */
- .link:hover {
-   text-shadow: 0 0 8px rgba(130, 87, 229, 0.3);
- }
- 
- /* Adicione uma media query para responsividade */
  @media (max-width: 768px) {
    .header {
      padding: 1rem;
@@ -92,9 +93,10 @@
    .link {
      font-size: 0.9rem;
    }
-   
+ 
    .logo {
-     width: 100px; /* Logo um pouco menor em telas pequenas */
+     width: 50px;
      height: 35px;
    }
  }
+ 

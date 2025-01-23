@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import styles from "./Header.module.css";
 
-import logoHeader from "../../assets/iconeNoNavegador.ico";
+import logoHeader from "../../assets/DraKAysa.png";
 
 export function Header() {
   return (

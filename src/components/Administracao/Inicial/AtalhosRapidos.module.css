@@ -1,20 +1,24 @@
 .atalhos {
    display: flex;
-   justify-content: space-around;
-   margin-bottom: 20px;
+   flex-direction: column;
+   gap: 10px;
+   flex: 1;
  }
  
  .botao {
    padding: 10px 20px;
-   background-color: #007bff;
+   background-color: #ff6f61;
    color: white;
    border: none;
    border-radius: 5px;
    cursor: pointer;
-   transition: background-color 0.3s;
+   text-align: center;
+   font-size: 1rem;
+   transition: transform 0.3s, background-color 0.3s;
  }
  
  .botao:hover {
-   background-color: #0056b3;
+   background-color: #e85b55;
+   transform: scale(1.05);
  }
  
