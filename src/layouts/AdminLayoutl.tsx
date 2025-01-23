@@ -1,5 +1,5 @@
 import { Outlet } from "react-router-dom";
-import { Header } from "../components/administracao/Header";
+import { Header } from "../components/Administracao/Header";
 
 export default function AdminLayout(){
   return (

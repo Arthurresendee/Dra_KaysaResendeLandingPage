@@ -1,10 +1,10 @@
 import { Routes, Route } from "react-router-dom";
 import AdminLayout from "./layouts/AdminLayoutl";
-import { Galeria } from "./pages/Galeria";
-import { GaleriaAdm } from "./pages/GaleriaAdm";
-import { Home } from "./pages/Home";
-import { InicialAdm } from "./pages/InicialAdm";
-import { LandingPageAdm } from "./pages/LandingPageAdm";
+import { Galeria } from "./Pages/Galeria";
+import { GaleriaAdm } from "./Pages/GaleriaAdm";
+import { Home } from "./Pages/Home";
+import { InicialAdm } from "./Pages/InicialAdm";
+import { LandingPageAdm } from "./Pages/LandingPageAdm";
 
 export function Router() {
   return (

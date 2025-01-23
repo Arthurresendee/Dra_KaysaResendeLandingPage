@@ -1,8 +1,8 @@
-import { AtalhosRapidos } from "../components/administracao/inicial/AtalhosRapidos";
-import { BoasVindas } from "../components/administracao/inicial/BoasVindas";
-import { ConfiguracoesGerais } from "../components/administracao/inicial/ConfiguracoesGerais";
-import { UltimasAtualizacoes } from "../components/administracao/inicial/UltimasAtualizacoes";
-import { VisaoGeral } from "../components/administracao/inicial/VisaoGeral";
+import { AtalhosRapidos } from "../components/Administracao/Inicial/AtalhosRapidos";
+import { BoasVindas } from "../components/Administracao/Inicial/BoasVindas";
+import { ConfiguracoesGerais } from "../components/Administracao/Inicial/ConfiguracoesGerais";
+import { UltimasAtualizacoes } from "../components/Administracao/Inicial/UltimasAtualizacoes";
+import { VisaoGeral } from "../components/Administracao/Inicial/VisaoGeral";
 
 export function InicialAdm(){
    return (
