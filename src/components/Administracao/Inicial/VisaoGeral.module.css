@@ -1,0 +1,14 @@
+.visaoGeral {
+   display: flex;
+   gap: 15px;
+   margin-bottom: 20px;
+ }
+ 
+ .card {
+   background-color: #f5f5f5;
+   padding: 15px;
+   border-radius: 8px;
+   text-align: center;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+ }
+ 

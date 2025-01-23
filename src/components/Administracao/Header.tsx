@@ -13,8 +13,8 @@ export function Header() {
         <nav className={styles.nav}>
           <ul className={styles.menu}>
             <li className={styles.item}>
-              <Link to="/adm/home" className={styles.link}>
-                Home
+              <Link to="/adm/landingPage" className={styles.link}>
+                LandingPage
               </Link>
             </li>
             <li className={styles.item}>
