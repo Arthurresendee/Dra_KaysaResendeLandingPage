@@ -1,11 +1,11 @@
 import { Routes, Route } from "react-router-dom";
 
-import { Galeria } from "./Pages/Galeria";
+import { Galeria } from "./pages/Galeria";
 import AdminLayout from "./layouts/AdminLayoutl";
-import { AdmGaleria } from "./components/Administracao/galeria/AdmGaleria";
-import { Inicial } from "./Pages/Inicial";
-import { Home } from "./Pages/Home";
-import { LandingPage } from "./Pages/LandingPage";
+import { GaleriaAdm } from "./pages/GaleriaAdm";
+import { InicialAdm } from "./pages/InicialAdm";
+import { Home } from "./pages/Home";
+import { LandingPageAdm } from "./pages/LandingPageAdm";
 
 export function Router() {
   return (
@@ -15,10 +15,10 @@ export function Router() {
       <Route path="/galeria" element={<Galeria />} />
 
       <Route path="/adm" element={<AdminLayout/>} >
-         <Route index element={<Inicial />} />
-         <Route path="inicial" element={<Inicial/>} />
-         <Route path="landingPage" element={<LandingPage/>} />
-         <Route path="galeria" element={<AdmGaleria/>} />
+         <Route index element={<InicialAdm />} />
+         <Route path="inicial" element={<InicialAdm/>} />
+         <Route path="landingPage" element={<LandingPageAdm/>} />
+         <Route path="galeria" element={<GaleriaAdm/>} />
       </Route>
     </Routes>
   );

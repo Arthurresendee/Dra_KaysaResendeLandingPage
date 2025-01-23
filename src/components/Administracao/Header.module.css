@@ -23,8 +23,8 @@
  }
  
  .logo {
-   width: 40px;  /* Aumentei a largura */
-   height: 40px;  /* Mantive a altura */
+   width: 40px;
+   height: 40px;
    object-fit: contain;
  }
  
