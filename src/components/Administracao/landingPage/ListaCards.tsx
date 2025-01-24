@@ -1,4 +1,5 @@
 import { Card } from "../../../Hooks/useTopicoManager";
+import styles from './ListaCards.module.css'
 
 interface ListaCardsProps {
   cards: Card[];
@@ -8,15 +9,17 @@ interface ListaCardsProps {
 
 export default function ListaCards({ cards, onEditar, onExcluir }: ListaCardsProps) {
   return (
-    <div>
+    <div className={styles.container}>
       <h2>Lista de Cards</h2>
-      <ul>
+      <ul className={styles.listaCards}>
         {cards.map((card) => (
-          <li key={card.id}>
+          <li key={card.id} className={styles.cardItem}>
             <h3>{card.titulo}</h3>
             <p>{card.texto}</p>
-            <button onClick={() => onEditar(card)}>Editar</button>
-            <button onClick={() => onExcluir(card.id)}>Excluir</button>
+            <div className={styles.cardActions}>
+              <button onClick={() => onEditar(card)}>Editar</button>
+              <button onClick={() => onExcluir(card.id)}>Excluir</button>
+            </div>
           </li>
         ))}
       </ul>

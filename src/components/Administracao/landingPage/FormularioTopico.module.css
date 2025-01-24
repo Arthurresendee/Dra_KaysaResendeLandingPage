@@ -1,0 +1,29 @@
+.formContainer {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column; /* Coloca os elementos em coluna */
+    gap: 15px; /* Espaçamento entre os itens */
+    align-items:flex-start; /* Centraliza os itens */
+  }
+  
+  .input {
+    width: 100%; /* Faz o input ocupar toda a largura */
+    max-width: 400px; /* Define uma largura máxima */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #102947;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: #0b1e35;
+  }
+  

@@ -1,0 +1,44 @@
+.container {
+    margin-top: 20px;
+  }
+  
+  .listaCards {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .cardItem {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+  }
+  
+  .cardItem h3 {
+    margin-bottom: 8px;
+  }
+  
+  .cardItem p {
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .cardActions {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .cardActions button {
+    padding: 8px 12px;
+    border: none;
+    background-color: #102947;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .cardActions button:hover {
+    background-color: #0b1e35;
+  }
+  
