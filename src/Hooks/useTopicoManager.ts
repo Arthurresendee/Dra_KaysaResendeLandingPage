@@ -39,7 +39,7 @@ export const useTopicoManager = () => {
       tituloTopico,
       cards: [], // Começa sem nenhum card
     };
-    
+
     // Cria um novo array
     // Copia todos os tópicos existentes
     // Adiciona o novo tópico no final
@@ -142,10 +142,10 @@ export const useTopicoManager = () => {
   // Permite que componentes externos usem estas funcionalidades
   return {
     topicos, // Lista completa de tópicos
-    adicionarTopico, // Função para criar novos tópicos
-    excluirTopico, // Função para remover tópicos
-    adicionarCard, // Função para adicionar cards
-    editarCard, // Função para editar cards existentes
-    excluirCard, // Função para remover cards
+    adicionarTopico,
+    excluirTopico,
+    adicionarCard,
+    editarCard,
+    excluirCard,
   };
 };

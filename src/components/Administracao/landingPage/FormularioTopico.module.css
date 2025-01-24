@@ -1,14 +1,14 @@
 .formContainer {
     margin-top: 20px;
     display: flex;
-    flex-direction: column; /* Coloca os elementos em coluna */
-    gap: 15px; /* Espaçamento entre os itens */
-    align-items:flex-start; /* Centraliza os itens */
+    flex-direction: column;
+    gap: 15px;
+    align-items:flex-start;
   }
   
   .input {
-    width: 100%; /* Faz o input ocupar toda a largura */
-    max-width: 400px; /* Define uma largura máxima */
+    width: 100%;
+    max-width: 400px;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
