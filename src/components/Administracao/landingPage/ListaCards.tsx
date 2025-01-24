@@ -1,4 +1,4 @@
-import { Card } from "../../../Pages/LandingPageAdm";
+import { Card } from "../../../Hooks/useTopicoManager";
 
 interface ListaCardsProps {
   cards: Card[];

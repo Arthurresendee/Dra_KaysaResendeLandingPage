@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Card } from "../../../Pages/LandingPageAdm";
+import { Card } from "../../../Hooks/useTopicoManager";
 
 interface FormularioCardProps {
   onAdicionar: (card: Omit<Card, "id">) => void;

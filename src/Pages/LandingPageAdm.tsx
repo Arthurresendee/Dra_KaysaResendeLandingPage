@@ -1,82 +1,18 @@
-import { useState } from "react";
 import styles from "./LandingPageAdm.module.css";
 import ListaCards from "../components/Administracao/landingPage/ListaCards";
 import FormularioTopico from "../components/Administracao/landingPage/FormularioTopico";
 import { FormularioCard } from "../components/Administracao/landingPage/FormularioCard";
-
-export interface Card {
-   id: number;
-   titulo: string;
-   texto: string;
- }
- 
-
-export interface Topico {
-  id: number;
-  tituloTopico: string;
-  cards: Card[];
-}
+import { useTopicoManager } from "../Hooks/useTopicoManager";
 
 export function LandingPageAdm() {
-  const [topicos, setTopicos] = useState<Topico[]>([]);
-
-  const adicionarTopico = (tituloTopico: string) => {
-    const novoTopico: Topico = {
-      id: topicos.length + 1,
-      tituloTopico,
-      cards: [],
-    };
-    setTopicos([...topicos, novoTopico]);
-  };
-
-//   const excluirTopico = (idTopico: number) => {
-//    setTopicos((prevTopicos) => prevTopicos.filter((topico) => topico.id !== idTopico));
-//  }
- 
-
-  const adicionarCard = (idTopico: number, novoCard: Omit<Card, "id">) => {
-   setTopicos((prevTopicos) =>
-     prevTopicos.map((topico) =>
-       topico.id === idTopico
-         ? {
-             ...topico,
-             cards: [
-               ...topico.cards,
-               { ...novoCard, id: topico.cards.length + 1 },
-             ],
-           }
-         : topico
-     )
-   );
- };
-
-  const editarCard = (idTopico: number, cardEditado: Card) => {
-    setTopicos((prevTopicos) =>
-      prevTopicos.map((topico) =>
-        topico.id === idTopico
-          ? {
-              ...topico,
-              cards: topico.cards.map((card) =>
-                card.titulo === cardEditado.titulo ? cardEditado : card
-              ),
-            }
-          : topico
-      )
-    );
-  };
-
-  const excluirCard = (idTopico: number, idCard: number) => {
-   setTopicos((prevTopicos) =>
-     prevTopicos.map((topico) =>
-       topico.id === idTopico
-         ? {
-             ...topico,
-             cards: topico.cards.filter((card) => card.id !== idCard),
-           }
-         : topico
-     )
-   );
- };
+  const {
+    topicos,
+    adicionarTopico,
+    excluirTopico,
+    adicionarCard,
+    editarCard,
+    excluirCard,
+  } = useTopicoManager();
 
   return (
     <div className={styles.container}>
@@ -92,7 +28,10 @@ export function LandingPageAdm() {
 
         {topicos.map((topico) => (
           <section key={topico.id} className={styles.topicoSection}>
-            <h2>{topico.tituloTopico}</h2>
+            <div className={styles.topicoHeader}>
+              <h2>{topico.tituloTopico}</h2>
+              <button onClick={() => excluirTopico(topico.id)}>Excluir Tópico</button>
+            </div>
             <FormularioCard
               onAdicionar={(novoCard) => adicionarCard(topico.id, novoCard)}
             />
