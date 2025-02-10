@@ -1,24 +1,9 @@
 import styles from "./TopicoSection.module.css";
 import { ScrollAnimation } from "../ScrollAnimation";
-
-interface Card {
-  titulo: string;
-  texto: string;
-}
-
-export interface Topico {
-  id: number;
-  tituloTopico: string;
-  cards: Card[];
-}
-
-interface TopicoType {
-  topicos: Topico[];
-}
+import { TopicoType } from "../../../types/types"; // Importando os tipos
 
 export function TopicoSection({ topicos }: TopicoType) {
   return (
-
     <div className={styles.topicos}>
       {topicos.map((topico) => (
         <ScrollAnimation key={topico.id}>
@@ -38,6 +23,5 @@ export function TopicoSection({ topicos }: TopicoType) {
         </ScrollAnimation>
       ))}
     </div>
-    // </PlanoDeFundo>
   );
 }

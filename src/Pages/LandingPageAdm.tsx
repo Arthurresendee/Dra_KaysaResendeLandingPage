@@ -25,7 +25,7 @@ export function LandingPageAdm() {
           <h2>Adicionar Novo Tópico</h2>
           <FormularioTopico onAdicionar={adicionarTopico} />
         </section>
-
+  
         {topicos.map((topico) => (
           <section key={topico.id} className={styles.topicoSection}>
             <div className={styles.topicoHeader}>
