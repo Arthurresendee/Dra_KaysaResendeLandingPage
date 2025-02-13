@@ -1,4 +1,4 @@
-import { Card } from "../../../Hooks/useTopicoManager"; // Importa o tipo `Card` para definir o formato esperado dos objetos `Card`.
+import { Card } from '../../../types/types';
 import styles from './ListaCards.module.css'; // Importa os estilos CSS do componente.
 
 interface ListaCardsProps {
@@ -15,8 +15,8 @@ export default function ListaCards({ cards, onEditar, onExcluir }: ListaCardsPro
       <ul className={styles.listaCards}> 
         {/* Renderiza cada card recebido como props na lista. Para cada card, exibe o título, 
         texto e adiciona botões de ação para editar e excluir. */}
-        {cards.map((card) => (
-          <li key={card.id} className={styles.cardItem}>
+        {cards.map((card, index) => (
+          <li key={card.id || index} className={styles.cardItem}>
             <h3>{card.titulo}</h3>
             <p>{card.texto}</p>
             <div className={styles.cardActions}>

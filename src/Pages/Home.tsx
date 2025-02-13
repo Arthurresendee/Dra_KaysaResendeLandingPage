@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import axios from "axios";
 import { Footer } from "../components/LandingPage/Footer";
 import { LinksSociais } from "../components/LandingPage/LinksSociais";
@@ -41,7 +41,6 @@ export function Home() {
       <LinksSociais />
       <Hero />
       <GaleriaSection />
-      {/* Passa os tópicos dinamicamente para o TopicoSection */}
       <TopicoSection topicos={topicos} />
       <Sobre />
       <SobreAClinica object={sobreAClinicaObject} />

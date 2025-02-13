@@ -2,6 +2,7 @@ export interface Card {
    id: number;
    titulo: string;
    texto: string;
+   topicoId: number;
  }
  
  export interface Topico {

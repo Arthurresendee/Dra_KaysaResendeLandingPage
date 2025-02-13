@@ -1,8 +1,8 @@
 import styles from "./LandingPageAdm.module.css";
 import ListaCards from "../components/Administracao/landingPage/ListaCards";
 import FormularioTopico from "../components/Administracao/landingPage/FormularioTopico";
-import { FormularioCard } from "../components/Administracao/landingPage/FormularioCard";
 import { useTopicoManager } from "../Hooks/useTopicoManager";
+import { FormularioCard } from "../components/Administracao/landingPage/FormularioCard";
 
 export function LandingPageAdm() {
   const {
@@ -25,16 +25,20 @@ export function LandingPageAdm() {
           <h2>Adicionar Novo Tópico</h2>
           <FormularioTopico onAdicionar={adicionarTopico} />
         </section>
-  
+
         {topicos.map((topico) => (
           <section key={topico.id} className={styles.topicoSection}>
             <div className={styles.topicoHeader}>
               <h2>{topico.tituloTopico}</h2>
-              <button onClick={() => excluirTopico(topico.id)}>Excluir Tópico</button>
+              <button onClick={() => excluirTopico(topico.id)}>
+                Excluir Tópico
+              </button>
             </div>
             <FormularioCard
+              topicoId={topico.id} // Passa o ID do tópico atual
               onAdicionar={(novoCard) => adicionarCard(topico.id, novoCard)}
             />
+
             <ListaCards
               cards={topico.cards}
               onEditar={(cardEditado) => editarCard(topico.id, cardEditado)}
