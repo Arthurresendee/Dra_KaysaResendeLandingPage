@@ -16,6 +16,7 @@ export default function ListaCards({ cards, onEditar, onExcluir }: ListaCardsPro
         {/* Renderiza cada card recebido como props na lista. Para cada card, exibe o título, 
         texto e adiciona botões de ação para editar e excluir. */}
         {cards.map((card, index) => (
+         
           <li key={card.id || index} className={styles.cardItem}>
             <h3>{card.titulo}</h3>
             <p>{card.texto}</p>

@@ -15,3 +15,9 @@ export interface Card {
    topicos: Topico[];
  }
  
+ export interface Imagem {
+   id: number;
+   url: string;
+   nome: string;
+   dataCriacao: Date;
+ }

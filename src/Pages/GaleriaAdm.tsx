@@ -1,9 +1,10 @@
+import RegistroPaciente from "../components/Administracao/Galeria/RegistroPaciente";
 
-
-export function GaleriaAdm(){
+export default function GaleriaAdm(){
    return (
-      <div>
-         <h1>GaleriaAdm</h1>
-      </div>
-   )
+      <>
+         <h1>Aqui nós teremos um lugar para colocar 3 imagens diferentes</h1>
+         <RegistroPaciente />
+      </>
+   );
 }
