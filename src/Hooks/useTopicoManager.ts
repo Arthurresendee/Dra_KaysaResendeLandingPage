@@ -51,26 +51,6 @@ export const useTopicoManager = () => {
     }
   };
 
-  const editarCard = async (idTopico: number, cardEditado: Card) => {
-    try {
-      const response = await axios.put(`http://localhost:5200/api/card/${cardEditado.id}`, cardEditado);
-      setTopicos((prevTopicos) =>
-        prevTopicos.map((topico) =>
-          topico.id === idTopico 
-            ? { 
-                ...topico, 
-                cards: topico.cards.map((card) => 
-                  card.id === cardEditado.id ? response.data : card
-                ) 
-              }
-            : topico
-        )
-      );
-    } catch (error) {
-      console.error("Erro ao editar card:", error);
-    }
-  };
-
   const excluirCard = async (idTopico: number, idCard: number) => {
     try {
       await axios.delete(`http://localhost:5200/api/card/${idCard}`);
@@ -86,5 +66,5 @@ export const useTopicoManager = () => {
     }
   };
 
-  return { topicos, adicionarTopico, excluirTopico, adicionarCard, editarCard, excluirCard };
+  return { topicos, adicionarTopico, excluirTopico, adicionarCard, excluirCard };
 };

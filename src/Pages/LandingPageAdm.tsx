@@ -10,7 +10,6 @@ export function LandingPageAdm() {
     adicionarTopico,
     excluirTopico,
     adicionarCard,
-    editarCard,
     excluirCard,
   } = useTopicoManager();
 
@@ -34,14 +33,17 @@ export function LandingPageAdm() {
                 Excluir Tópico
               </button>
             </div>
-            <FormularioCard
-              topicoId={topico.id} // Passa o ID do tópico atual
-              onAdicionar={(novoCard) => adicionarCard(topico.id, novoCard)}
-            />
+            
+            <div className={styles.cardFormSection}>
+              <h3>Adicionar Card</h3>
+              <FormularioCard
+                topicoId={topico.id}
+                onAdicionar={(novoCard) => adicionarCard(topico.id, novoCard)}
+              />
+            </div>
 
             <ListaCards
               cards={topico.cards}
-              onEditar={(cardEditado) => editarCard(topico.id, cardEditado)}
               onExcluir={(tituloCard) => excluirCard(topico.id, tituloCard)}
             />
           </section>
