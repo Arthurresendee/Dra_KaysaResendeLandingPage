@@ -16,38 +16,40 @@ export function LandingPageAdm() {
   return (
     <div className={styles.container}>
       <header className={styles.header}>
-        <h1>Administração da Landing Page</h1>
+        <h1>Administração</h1>
       </header>
 
       <main className={styles.main}>
         <section className={styles.formSection}>
-          <h2>Adicionar Novo Tópico</h2>
+          <h2>Novo Tópico</h2>
           <FormularioTopico onAdicionar={adicionarTopico} />
         </section>
 
-        {topicos.map((topico) => (
-          <section key={topico.id} className={styles.topicoSection}>
-            <div className={styles.topicoHeader}>
-              <h2>{topico.tituloTopico}</h2>
-              <button onClick={() => excluirTopico(topico.id)}>
-                Excluir Tópico
-              </button>
-            </div>
-            
-            <div className={styles.cardFormSection}>
-              <h3>Adicionar Card</h3>
-              <FormularioCard
-                topicoId={topico.id}
-                onAdicionar={(novoCard) => adicionarCard(topico.id, novoCard)}
-              />
-            </div>
+        <div className={styles.topicosGrid}>
+          {topicos.map((topico) => (
+            <section key={topico.id} className={styles.topicoSection}>
+              <div className={styles.topicoHeader}>
+                <h2>{topico.tituloTopico}</h2>
+                <button onClick={() => excluirTopico(topico.id)}>
+                  Excluir
+                </button>
+              </div>
+              
+              <div className={styles.cardFormSection}>
+                <h3>Adicionar Card</h3>
+                <FormularioCard
+                  topicoId={topico.id}
+                  onAdicionar={(novoCard) => adicionarCard(topico.id, novoCard)}
+                />
+              </div>
 
-            <ListaCards
-              cards={topico.cards}
-              onExcluir={(tituloCard) => excluirCard(topico.id, tituloCard)}
-            />
-          </section>
-        ))}
+              <ListaCards
+                cards={topico.cards}
+                onExcluir={(tituloCard) => excluirCard(topico.id, tituloCard)}
+              />
+            </section>
+          ))}
+        </div>
       </main>
     </div>
   );

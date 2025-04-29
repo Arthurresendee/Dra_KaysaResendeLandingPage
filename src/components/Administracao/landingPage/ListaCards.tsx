@@ -15,13 +15,12 @@ export default function ListaCards({ cards, onExcluir }: ListaCardsProps) {
         {/* Renderiza cada card recebido como props na lista. Para cada card, exibe o título, 
         texto e adiciona botões de ação para excluir. */}
         {cards.map((card, index) => (
+         
           <li key={card.id || index} className={styles.cardItem}>
             <h3>{card.titulo}</h3>
             <p>{card.texto}</p>
             <div className={styles.cardActions}>
-              <button onClick={() => onExcluir(card.id)}>
-                <span>🗑️</span> Excluir
-              </button>
+              <button onClick={() => onExcluir(card.id)}>Excluir</button>
             </div>
           </li>
         ))}
