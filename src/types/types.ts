@@ -21,3 +21,12 @@ export interface Card {
    nome: string;
    dataCriacao: Date;
  }
+
+export interface UsuarioSistema {
+  id: number;
+  tipoDeUsuario: number;
+  acessoDeUsuario: string;
+  senha: string;
+  nomeCompleto: string | null;
+  tipoDeSexo: string | null;
+}
