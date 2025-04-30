@@ -1,5 +1,4 @@
 import styles from "./InicialAdm.module.css";
-import { AtalhosRapidos } from "../components/Administracao/Inicial/AtalhosRapidos";
 import { BoasVindas } from "../components/Administracao/Inicial/BoasVindas";
 import { ConfiguracoesGerais } from "../components/Administracao/Inicial/ConfiguracoesGerais";
 import { UltimasAtualizacoes } from "../components/Administracao/Inicial/UltimasAtualizacoes";
@@ -9,13 +8,20 @@ export function InicialAdm() {
   return (
     <div className={styles.container}>
       <BoasVindas />
-      <div className={styles.row}>
+      
+      {/* Seção de Visão Geral */}
+      <div className={styles.section}>
+        <h2 className={styles.sectionTitle}>Visão Geral do Sistema</h2>
         <VisaoGeral />
-        <AtalhosRapidos />
       </div>
-      <div className={styles.row}>
-        <UltimasAtualizacoes />
-        <ConfiguracoesGerais />
+
+      {/* Seção de Atividades Recentes */}
+      <div className={styles.section}>
+        <h2 className={styles.sectionTitle}>Atividades Recentes</h2>
+        <div className={styles.row}>
+          <UltimasAtualizacoes />
+          <ConfiguracoesGerais />
+        </div>
       </div>
     </div>
   );

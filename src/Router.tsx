@@ -6,7 +6,7 @@ import { Home } from "./Pages/Home";
 import { InicialAdm } from "./Pages/InicialAdm";
 import { LandingPageAdm } from "./Pages/LandingPageAdm";
 import GaleriaAdm from "./Pages/GaleriaAdm";
-import { Login } from "./Pages/Login";
+import Login from "./Pages/Login";
 
 export function Router() {
   return (
