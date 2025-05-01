@@ -25,7 +25,7 @@ export function Home() {
   useEffect(() => {
     // Chama a API para buscar os dados
     axios
-      .get("http://localhost:5200/api/topico")
+      .get("http://localhost:3000/api/topico")
       .then((response) => {
         // Atualiza o estado com os dados da API
         setTopicos(response.data.data);

@@ -7,6 +7,7 @@ import { InicialAdm } from "./Pages/InicialAdm";
 import { LandingPageAdm } from "./Pages/LandingPageAdm";
 import GaleriaAdm from "./Pages/GaleriaAdm";
 import Login from "./Pages/Login";
+import { Configuracoes } from "./Pages/Configuracoes";
 
 export function Router() {
   return (
@@ -20,6 +21,7 @@ export function Router() {
         <Route path="inicial" element={<InicialAdm/>} />
         <Route path="landingPage" element={<LandingPageAdm/>} />
         <Route path="galeria" element={<GaleriaAdm/>} />
+        <Route path="configuracoes" element={<Configuracoes/>} />
       </Route>
     </Routes>
   );

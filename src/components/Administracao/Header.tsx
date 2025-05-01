@@ -27,6 +27,11 @@ export function Header() {
                 Inicial
               </Link>
             </li>
+            <li className={styles.item}>
+              <Link to="/adm/configuracoes" className={styles.link}>
+                Configurações
+              </Link>
+            </li>
           </ul>
         </nav>
       </div>

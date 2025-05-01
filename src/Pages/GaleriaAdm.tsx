@@ -1,10 +1,10 @@
-import RegistroPaciente from "../components/Administracao/Galeria/RegistroPaciente";
+import styles from "./GaleriaAdm.module.css";
+import { RegistroAntesDepois } from "../components/Administracao/Galeria/RegistroAntesDepois";
 
-export default function GaleriaAdm(){
-   return (
-      <>
-         <h1>Aqui nós teremos um lugar para colocar 3 imagens diferentes</h1>
-         <RegistroPaciente />
-      </>
-   );
+export default function GaleriaAdm() {
+  return (
+    <div className={styles.container}>
+      <RegistroAntesDepois />
+    </div>
+  );
 }
