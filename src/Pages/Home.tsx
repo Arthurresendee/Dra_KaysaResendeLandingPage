@@ -25,10 +25,10 @@ export function Home() {
   useEffect(() => {
     // Chama a API para buscar os dados
     axios
-      .get("http://localhost:3000/api/topico")
+      .get("https://drakaysalandingpageapi-production.up.railway.app/api/topicos")
       .then((response) => {
         // Atualiza o estado com os dados da API
-        setTopicos(response.data.data);
+        setTopicos(response.data);
         console.log("Tópicos carregados com sucesso:", response);
       })
       .catch((error) => {

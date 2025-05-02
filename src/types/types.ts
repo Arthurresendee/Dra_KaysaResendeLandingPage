@@ -23,10 +23,10 @@ export interface Card {
  }
 
 export interface UsuarioSistema {
-  id: number;
-  tipoDeUsuario: number;
-  acessoDeUsuario: string;
+  user: string;
   senha: string;
-  nomeCompleto: string | null;
-  tipoDeSexo: string | null;
+  createdAt: string;
+  updatedAt: string;
+  _v: number;
+  id: string;
 }

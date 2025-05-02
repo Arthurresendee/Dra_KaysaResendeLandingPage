@@ -1,8 +1,18 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
-import { UsuarioSistema } from '../types/types';
 import styles from './Login.module.css';
+
+interface LoginResponse {
+  usuario: {
+    _id: string;
+    user: string;
+    createdAt: string;
+    updatedAt: string;
+  };
+  token: string;
+  message: string;
+}
 
 const Login = () => {
   const navigate = useNavigate();
@@ -17,19 +27,20 @@ const Login = () => {
     setLoading(true);
 
     try {
-      const response = await axios.get<UsuarioSistema[]>('http://localhost:5200/api/usuariodosistema');
-      const users = response.data;
+      const response = await axios.post<LoginResponse>('http://localhost:3000/api/auth/login', {
+        user: usuario,
+        senha: senha
+      });
       
-      const user = users.find(u => u.acessoDeUsuario === usuario && u.senha === senha);
+      // Armazena o token no localStorage
+      localStorage.setItem('token', response.data.token);
+      // Armazena os dados do usuário no localStorage (opcional)
+      localStorage.setItem('usuario', JSON.stringify(response.data.usuario));
       
-      if (user) {
-        alert('Login realizado com sucesso!');
-        navigate('/adm');
-      } else {
-        setError('Usuário ou senha incorretos');
-      }
+      alert(response.data.message); // "Login realizado com sucesso"
+      navigate('/adm');
     } catch (err) {
-      setError('Erro ao conectar com o servidor. Tente novamente mais tarde.');
+      setError('Usuário ou senha incorretos');
       console.error('Erro ao fazer login:', err);
     } finally {
       setLoading(false);

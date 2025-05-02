@@ -128,14 +128,17 @@
  .menuLink {
    display: flex;
    align-items: center;
-   gap: 10px;
-   color: #495057;
+   gap: 0.5rem;
+   padding: 0.5rem 1rem;
+   color: inherit;
    text-decoration: none;
-   font-size: 14px;
+   transition: background-color 0.2s ease;
+   cursor: pointer;
  }
  
  .menuLink:hover {
-   color: #212529;
+   background-color: rgba(0, 0, 0, 0.05);
+   border-radius: 4px;
  }
  
  .menuLink svg {
