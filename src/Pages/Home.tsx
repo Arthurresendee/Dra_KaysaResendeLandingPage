@@ -25,7 +25,7 @@ export function Home() {
   useEffect(() => {
     // Chama a API para buscar os dados
     axios
-      .get("https://drakaysalandingpageapi-production.up.railway.app/api/topicos")
+      .get("https://api.drakaysa.com.br/api/topicos")
       .then((response) => {
         // Atualiza o estado com os dados da API
         setTopicos(response.data);
