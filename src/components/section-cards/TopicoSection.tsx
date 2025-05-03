@@ -1,6 +1,6 @@
 import styles from "./TopicoSection.module.css";
 import { ScrollAnimation } from "../ScrollAnimation";
-import { TopicoType } from "../../../types/types"; // Importando os tipos
+import { TopicoType } from "../../types/types"; // Importando os tipos
 
 export function TopicoSection({ topicos }: TopicoType) {
   return (

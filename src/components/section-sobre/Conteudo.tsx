@@ -1,5 +1,5 @@
 import styles from "./Conteudo.module.css";
-import imagemDra from "../../../assets/kaysaabout.jpg";
+import kaysaImage from "../../assets/kaysaabout.jpg";
 import { ScrollAnimation } from "../ScrollAnimation";
 
 export interface Paragrafo {
@@ -24,7 +24,7 @@ export function Conteudo({ conteudoCompleto }: { conteudoCompleto: Content }) {
             <div className={styles.imageWrapper}>
               <ScrollAnimation direction="left">
                 <img
-                  src={imagemDra}
+                  src={kaysaImage}
                   alt="Dra. Kaysa"
                   className={styles.image}
                 />

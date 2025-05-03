@@ -1,8 +1,7 @@
 import styles from "./LinksSociais.module.css";
-
-import whatsappIcon from "../../assets/whatssapp.svg";
-import instagramIcon from "../../assets/instagram.svg";
-import facebookIcon from "../../assets/facebook.svg";
+import whatsappIcon from "../assets/whatssapp.svg";
+import instagramIcon from "../assets/instagram.svg";
+import facebookIcon from "../assets/facebook.svg";
 
 export function LinksSociais() {
   return (

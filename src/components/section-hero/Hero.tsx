@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import styles from './Hero.module.css'; 
-import ImgHero from '../../../assets/ImgHero.jpg';
+import heroImage from '../../assets/ImgHero.jpg';
 import { HorarioFuncionamento } from './HorarioFuncionamento';
 import { useNavigate } from 'react-router-dom';
 
@@ -52,7 +52,7 @@ export function Hero() {
       </aside>
 
       <div className={styles.backgroundWrapper}>
-        <img className={styles.backgroundImage} src={ImgHero} alt="Imagem Hero" />
+        <img className={styles.backgroundImage} src={heroImage} alt="Imagem Hero" />
       </div>
       <div className={styles.overlayContent}>
         <HorarioFuncionamento />
