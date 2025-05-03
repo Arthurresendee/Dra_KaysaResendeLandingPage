@@ -6,12 +6,12 @@ export function TopicoSection({ topicos }: TopicoType) {
   return (
     <div className={styles.topicos}>
       {topicos.map((topico) => (
-        <ScrollAnimation key={topico.id}>
+        <ScrollAnimation key={`topico-${topico.id}`}>
           <div className={styles.container}>
             <h2 className={styles.TituloTopico}>{topico.tituloTopico}</h2>
             <div className={styles.containerCards}>
-              {topico.cards.map((card, index) => (
-                <ScrollAnimation key={index}>
+              {topico.cards.map((card) => (
+                <ScrollAnimation key={`card-${card.id}`}>
                   <div className={styles.card}>
                     <h3>{card.titulo}</h3>
                     <p>{card.texto}</p>

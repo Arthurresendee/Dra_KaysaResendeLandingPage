@@ -1,7 +1,16 @@
 import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import styles from './Login.module.css';
+
+// Configuração do Axios
+const api = axios.create({
+  baseURL: 'https://api.drakaysa.com.br',
+  headers: {
+    'Content-Type': 'application/json',
+    'Accept': 'application/json',
+  },
+  withCredentials: true
+});
 
 interface LoginResponse {
   usuario: {
@@ -15,7 +24,6 @@ interface LoginResponse {
 }
 
 const Login = () => {
-  const navigate = useNavigate();
   const [usuario, setUsuario] = useState('');
   const [senha, setSenha] = useState('');
   const [loading, setLoading] = useState(false);
@@ -27,7 +35,7 @@ const Login = () => {
     setLoading(true);
 
     try {
-      const response = await axios.post<LoginResponse>('http://localhost:3000/api/auth/login', {
+      const response = await api.post<LoginResponse>('/api/auth/login', {
         user: usuario,
         senha: senha
       });
@@ -38,7 +46,7 @@ const Login = () => {
       localStorage.setItem('usuario', JSON.stringify(response.data.usuario));
       
       alert(response.data.message); // "Login realizado com sucesso"
-      navigate('/adm');
+      window.location.href = 'https://adm.drakaysa.com.br/';
     } catch (err) {
       setError('Usuário ou senha incorretos');
       console.error('Erro ao fazer login:', err);
