@@ -36,7 +36,8 @@ const Login = () => {
       localStorage.setItem('usuario', JSON.stringify(response.data.usuario));
       
       alert(response.data.message); // "Login realizado com sucesso"
-      window.location.href = 'https://adm.drakaysa.com.br/';
+      // Redireciona com o token na URL
+      window.location.href = `https://adm.drakaysa.com.br/?token=${encodeURIComponent(response.data.token)}`;
     } catch (err) {
       setError('Usuário ou senha incorretos');
       console.error('Erro ao fazer login:', err);
