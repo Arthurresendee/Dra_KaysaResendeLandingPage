@@ -31,7 +31,7 @@ const Login = () => {
       });
       
       // Armazena o token no localStorage
-      localStorage.setItem('token', response.data.token);
+      localStorage.setItem('auth_token', response.data.token);
       // Armazena os dados do usuário no localStorage (opcional)
       localStorage.setItem('usuario', JSON.stringify(response.data.usuario));
       
