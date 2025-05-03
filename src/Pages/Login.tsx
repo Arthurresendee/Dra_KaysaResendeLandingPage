@@ -2,16 +2,6 @@ import { useState } from 'react';
 import axios from 'axios';
 import styles from './Login.module.css';
 
-// Configuração do Axios
-const api = axios.create({
-  baseURL: 'https://api.drakaysa.com.br',
-  headers: {
-    'Content-Type': 'application/json',
-    'Accept': 'application/json',
-  },
-  withCredentials: true
-});
-
 interface LoginResponse {
   usuario: {
     _id: string;
