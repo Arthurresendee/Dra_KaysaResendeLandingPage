@@ -35,7 +35,7 @@ const Login = () => {
     setLoading(true);
 
     try {
-      const response = await api.post<LoginResponse>('/api/auth/login', {
+      const response = await axios.post<LoginResponse>('https://api.drakaysa.com.br/api/auth/login', {
         user: usuario,
         senha: senha
       });
