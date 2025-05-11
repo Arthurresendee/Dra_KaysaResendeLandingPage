@@ -16,10 +16,6 @@ export function Conteudo({ conteudoCompleto }: { conteudoCompleto: Content }) {
     <section className={styles.conteudo}>
       <div className={styles.overlay}>
         <div className={styles.content}>
-          <ScrollAnimation direction="top">
-            <h1 className={styles.titulo}>{conteudoCompleto.titulo}</h1>
-          </ScrollAnimation>
-
           <div className={styles.container}>
             <div className={styles.imageWrapper}>
               <ScrollAnimation direction="left">
@@ -32,6 +28,11 @@ export function Conteudo({ conteudoCompleto }: { conteudoCompleto: Content }) {
             </div>
 
             <div className={styles.textContent}>
+              <ScrollAnimation direction="top">
+                <div className={styles.tituloBox}>
+                  <h1 className={styles.titulo}>{conteudoCompleto.titulo}</h1>
+                </div>
+              </ScrollAnimation>
               {conteudoCompleto.topicos.map((topico, index) => (
                 <ScrollAnimation key={index} direction="left">
                   <div className={styles.paragraphWrapper}>

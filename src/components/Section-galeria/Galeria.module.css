@@ -1,64 +1,86 @@
 .galeriaContainer {
-   background: linear-gradient(135deg, #1e1e1e, #333);
-   background-size: cover;
-   background-position: center;
-   background-repeat: no-repeat;
-   height: auto;
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: space-around;
-   align-items: center;
-   padding: 20px;
-   gap: 30px;
-   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-   overflow: hidden;
- }
- 
- .sectionEsquerda,
-.sectionDireita {
-  flex: 1 1 45%;
-  max-width: 600px;
-  min-width: 320px;
+  background: url('../../assets/backgroundSobre.jpg') center center/cover no-repeat;
+  height: auto;
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
   align-items: center;
-  padding: 25px;
-  background: rgba(255, 255, 255, 0.05);
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  gap: 30px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
 }
 
- 
- .sectionEsquerda {
-   margin-right: 1rem;
- }
- 
- .sectionDireita {
-   margin-left: 1rem;
- }
- 
- @media (max-width: 1024px) {
-   .galeriaContainer {
-     flex-direction: column;
-     height: auto;
-     gap: 20px;
-   }
- 
-   .sectionEsquerda,
-   .sectionDireita {
-     flex: 1 1 80%;
-     margin: 10px 0;
-   }
- }
- 
- @media (max-width: 768px) {
-   .galeriaContainer {
-     padding: 15px;
-   }
- 
-   .sectionEsquerda,
-   .sectionDireita {
-     padding: 15px;
-   }
- }
+.tituloGaleria {
+  font-size: 2.2rem;
+  font-family: 'Montserrat', 'Poppins', 'Raleway', sans-serif;
+  font-weight: 800;
+  color: #f4efe9;
+  text-shadow: 0 2px 8px rgba(16,41,71,0.18);
+  margin-bottom: 16px;
+  letter-spacing: 0.03em;
+  text-align: left;
+}
+
+.textoGaleria {
+  font-size: 1.1rem;
+  color: #e3eafc;
+  line-height: 1.6;
+  max-width: 420px;
+  text-align: left;
+}
+
+.imagemGaleria {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+  display: block;
+}
+
+.botaoGaleria {
+  margin-top: 24px;
+  padding: 12px 32px;
+  background: linear-gradient(90deg, #f4efe9 60%, #e7cfc2 100%);
+  color: #232224;
+  font-size: 1.1rem;
+  font-family: 'Montserrat', 'Poppins', 'Raleway', sans-serif;
+  font-weight: 700;
+  border: none;
+  border-radius: 24px;
+  box-shadow: 0 2px 8px rgba(244, 239, 233, 0.10);
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s, transform 0.15s;
+  letter-spacing: 0.03em;
+  outline: none;
+  display: inline-block;
+}
+.botaoGaleria:hover, .botaoGaleria:focus {
+  background: linear-gradient(90deg, #e7cfc2 60%, #f4efe9 100%);
+  box-shadow: 0 6px 18px rgba(244, 239, 233, 0.18);
+  transform: translateY(-2px) scale(1.04);
+  color: #102947;
+}
+@media (max-width: 768px) {
+  .tituloGaleria {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .textoGaleria {
+    font-size: 1rem;
+    max-width: 95vw;
+    text-align: center;
+  }
+  .imagemGaleria {
+    max-width: 95vw;
+    margin: 0 auto;
+  }
+  .botaoGaleria {
+    width: 100%;
+    padding: 12px 0;
+    font-size: 1rem;
+    border-radius: 18px;
+  }
+}
  

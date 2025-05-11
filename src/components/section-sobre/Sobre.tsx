@@ -12,10 +12,6 @@ const paragrafos: Paragrafo[] = [
   },
   {
     conteudo:
-      "🙏 Sinto que isso seja um talento e uma missão confiada por Deus. De onde vim, era certo que não iria conseguir me tornar o que sou hoje em meio às dificuldades e desafios, mas minha determinação e vontade de vencer ultrapassaram todas as adversidades e me tornaram quem sou hoje.",
-  },
-  {
-    conteudo:
       "💪 Dedico meu esforço máximo para 'transformar vidas e sorrisos' com meu trabalho, e assim trazer orgulho à minha família.",
   },
 ];
